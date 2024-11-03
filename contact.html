@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+    Author: Philip Dushie
+    Project: e Portfolio
+    Date: October 10, 2024
+    Component: contact.html page
+    -->
+    <meta charset="UTF-8">
+    <meta name="description" content="Philip Dushie's portfolio site">
+    <meta name="keywords"
+        content="Portfolio, Full Stack, Developer, Application, Web design, Philip, Dushie, Network Engineer, Networking, Networks, DevOps, Administrator, Support, End User, Desktop Support">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philip Dushie Portfolio | Contact Me</title>
+    <link href="reset.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/1.0.2/css/bulma.css"
+        integrity="sha512-hLLNN0vjl0jx+7whWX13jNmgFCE4qRM7llh6eu+NTD9gaIZHqXgQLiojT9d1NNLqzj2WUWTFnHVZ3NgZIO6/Eg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="layout.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b7235ceaac.js" crossorigin="anonymous"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+    <header>
+        <!--Insert header banner image here-->
+        <div id="header_image">
+            <img src="portfolio_header_image.png" alt="header image">
+        </div>
+    </header>
+    <div id="main_navbar">
+        <nav>
+            <a id="navicon" href="#"><img src="menu_burger_icon.webp" alt="menu icon"></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_me.html">About Me</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="myresume.html">My Resume</a></li>
+                <li><a href="goals.html">Goals</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="contact_content">
+        <section id="contact">
+            <h1>Contact Me</h1>
+            <p>
+                If you require my service, please feel free to reach out to me. I'm here to help you get that
+                full stack project executed professionally!
+            </p>
+            <div id="contact_form">
+                <form id="contactForm">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+                    <input type="submit" value="Send Message" onclick="submitForm()">
+                </form>
+            </div>
+            <div id="contact_details">
+                <h2><em>Get in Touch</em></h2>
+                <p><em>Email:&nbsp;</em>philip.dushie@gmail.com</p>
+                <p><em>Phone:&nbsp;</em>+1 782 882 7489</p>
+                <p><em>Address:&nbsp;</em>Halifax, NS, Canada</p>
+            </div>
+        </section>
+    </div>
+    <script src="submitForm.js"></script>
+    <script src="main.js"></script>
+    <footer>
+        <div>Philip Dushie &copy; 2024. All rights reserved.</div>
+        <div><a href="https://github.com/pdushie" target="new"><i class="fa-brands fa-github"></i></a></div>
+        <div><a href="https://www.linkedin.com/in/pdushie" target="new"><i class="fa-brands fa-linkedin"></i></a></div>
+    </footer>
+</body>
+</html>

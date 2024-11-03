@@ -1,0 +1,451 @@
+@charset "utf-8";
+/*
+Author: Philip Dushie
+Project: e Portfolio
+Date: October 10, 2024
+Component: Style CSS
+*/
+
+/*
+============================================================
+Style for all devices
+============================================================
+*/
+
+h1 {
+  font-size: 1.2em;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+b,em {
+  font-weight: bold;
+}
+
+i {
+  font-style: italic;
+}
+h3 {
+  font-size: 0.9em;
+}
+#intro p,
+  #about_me p {
+    font-size: 1.3em;
+  }
+
+  #skills h1 {
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  #skills p {
+    font-size: 1.3em;
+  }
+
+  #resume ul li {
+    list-style-type:disc;
+  }
+
+  #contact h1 {
+    text-align: left;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+#contact_form {
+    font-size: 1.2em;
+    color: #333333;
+    text-align: left;
+}
+
+#contact_form {
+    display: block;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#contact_form input,
+#contact_form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact_form input[type="submit"] {
+    background-color: #394d51;
+    color: #faf9f6;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+#contact_form input[type="submit"]:hover {
+    background-color: #3fa1bb;
+}
+
+#contact_details p {
+    margin: 5px 0;
+}
+
+div[id^="ce"]:nth-of-type(1):hover i.fa-solid.fa-code + div#html_description {
+  display: block;
+}
+  div#html_description {
+    display: none;
+  }
+
+div[id^="ce"]:nth-of-type(2):hover i.fa-brands.fa-css3 + div#css3_description {
+  display: block;
+}
+  div#css3_description {
+    display: none;
+  }
+
+div[id^="ce"]:nth-of-type(3):hover i.fa-brands.fa-js + div#javascript_description {
+  display: block;
+}
+  div#javascript_description {
+    display: none;
+  }
+
+div[id^="ce"]:nth-of-type(4):hover i.fa-brands.fa-python + div#python_description {
+  display: block;
+}
+  div#python_description {
+    display: none;
+  }
+
+div[id^="ce"]:nth-of-type(5):hover i.fa-solid.fa-code-branch + div#git_description {
+  display: block;
+}
+  div#git_description {
+    display: none;
+  }
+
+div[id^="ce"]:nth-of-type(6):hover i.fa-solid.fa-database + div#mysql_description {
+  display: block;
+}
+  div#mysql_description {
+    display: none;
+  }
+
+div[id^="ce"]:nth-of-type(7):hover i.fa-solid.fa-brain + div#machine_learning_description {
+  display: block;
+}
+  div#machine_learning_description {
+    display: none;
+  }
+
+div[id^="ce"]:nth-of-type(8):hover i.fa-solid.fa-chart-line + div#matplotlib_description {
+  display: block;
+}
+  div#matplotlib_description {
+    display: none;
+  }
+
+div[id^="ce"]:nth-of-type(9):hover i.fa-solid.fa-computer + div#desktop_support_description {
+  display: block;
+}
+  div#desktop_support_description {
+    display: none;
+  }
+
+div[id^="ce"]:nth-of-type(10):hover i.fa-brands.fa-docker + div#docker_description {
+  display: block;
+}
+  div#docker_description {
+    display: none;
+  }
+
+div[id^="ce"]:nth-of-type(11):hover i.fa-solid.fa-server + div#virtualization_description {
+  display: block;
+}
+  div#virtualization_description {
+    display: none;
+  }
+
+div[id^="ce"]:nth-of-type(12):hover i.fa-solid.fa-network-wired + div#networking_description {
+  display: block;
+}
+  div#networking_description {
+    display: none;
+  }
+
+div[id^="ce"]:nth-of-type(13):hover i.fa-solid.fa-shield-halved + div#cyber_security_description {
+  display: block;
+}
+
+div#cyber_security_description {
+  display: none;
+}
+div[id^="ce"]:nth-of-type(14):hover i.fa-solid.fa-terminal + div#bash_scripting_description {
+  display: block;
+}
+
+div#bash_scripting_description {
+  display: none;
+}
+div[id^="ce"]:nth-of-type(15):hover i.fa-brands.fa-ubuntu + div#linux_description {
+  display: block;
+}
+
+div#linux_description {
+  display: none;
+}
+div[id^="ce"]:nth-of-type(16):hover i.fa-brands.fa-windows + div#windows_description {
+  display: block;
+}
+
+div#windows_description {
+  display: none;
+}
+
+  footer {
+    background-color: #11151f;
+    color: #faf9f6;
+    text-align: center;
+  }
+
+  .fa-brands.fa-github, .fa-brands.fa-linkedin {
+    font-size: 1.3em;
+  }
+/*
+============================================================
+Style for Desktop and Tablets (Screen Size: 481px and above)
+============================================================
+*/
+
+@media screen and (min-width: 481px) {
+  html {
+    background-image: linear-gradient(#2d232b, #77858d, #11151f);
+    background-repeat: no-repeat;
+    font-family: "Poppins", sans-serif;
+  }
+  body {
+    background-color: #faf9f6;
+    color: rgb(16, 32, 32);
+    box-shadow: rgb(51, 51, 51) 10px 10px 25px, rgb(51, 51, 51) -10px 10px 25px;
+  }
+
+  #main_navbar ul {
+    background-color: #11151f;
+    height: 53px;
+    padding: 0;
+    border: 1px solid rgb(236, 232, 232);
+    border-style: groove;
+  }
+
+  #main_navbar ul a {
+    color: #faf9f6;
+    font-size: 1.3em;
+    text-decoration: none;
+  }
+
+  #main_navbar ul li {
+    list-style-type: none;
+  }
+
+  #main_navbar ul a:hover {
+    transition: 0.4s;
+    background-color: #093a47;
+    padding: 11px;
+}
+
+  #profile_picture {
+    display:none;
+  }
+
+  #desktop_profile_picture #desktop_pic {
+    display:block;
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 40%;
+}
+
+  #intro h1,
+  #about_me h1 {
+    font-size: 5em;
+    font-weight: bold;
+  }
+
+  #intro p {
+    font-size: 1.8em;
+  }
+
+  .grid [id^="ce"] {
+    background-color: #093a47;
+    color: #faf9f6;
+    font-size: 1.2em;
+    padding: 5%;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    border-radius: 10px;
+  }
+
+  #education h1 {
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+
+  #summary,
+  #experience,
+  #resume img,
+  #resume_skills,
+  #resume_education,
+  #resume_projects {
+    border: 1px solid #ece9e9;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+}
+
+  #resume img {
+    width: 95%;
+    height: 100%;
+    margin: auto;
+    padding: 10px;
+    object-fit: fill;
+  }
+
+  #summary p, #experience li, #resume_projects li {
+    font-size: 1.1em;
+    line-height: 30px;
+  }
+
+  #projects_content img {
+    max-height: 300px;
+    max-width: 300px;
+  }
+
+  #projects_content p {
+    font-size: 1.1em;
+    line-height: 40px;
+  }
+
+  #acme_projects  {
+    background-color: #093a47;
+    color: #faf9f6;
+    padding: 30px;
+    width: 90%;
+    margin: auto;
+  }
+
+  #battleship_project  {
+    background-color: #093a47;
+    color: #faf9f6;
+    padding: 30px;
+    width: 90%;
+    margin: auto;
+  }
+  #air_quality_project  {
+    background-color: #093a47;
+    color: #faf9f6;
+    padding: 30px;
+    width: 90%;
+    margin: auto;
+  }
+  #llm_project  {
+    background-color: #093a47;
+    color: #faf9f6;
+    padding: 30px;
+    width: 90%;
+    margin: auto;
+  }
+  #handwritten_project  {
+    background-color: #093a47;
+    color: #faf9f6;
+    padding: 30px;
+    width: 90%;
+    margin: auto;
+  }
+  #calculator_project  {
+    background-color: #093a47;
+    color: #faf9f6;
+    padding: 30px;
+    width: 90%;
+    margin: auto;
+  }
+
+  #goals_text {
+    font-size: 1.2em;
+    line-height: 35px;
+  }
+}
+
+/*
+============================================================
+Style for Mobile Devices (Screen Size: 480px max)
+============================================================
+*/
+
+@media screen and (max-width: 480px) {
+  #main_navbar {
+    background-color: #faf9f6;
+    padding: 0;
+  }
+
+  body {
+    background-color: rgb(33, 36, 39);
+    color:#faf9f6
+  }
+
+  #desktop_profile_picture img {
+    display: none;
+  }
+
+  #intro h1,
+  #about_me h1 {
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  nav ul li a {
+    line-height: 45px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #11151f;
+  }
+
+  #resume img {
+    grid-row-start: 1;
+    background-color: #3fa1bb;
+    border-radius: 42%;
+    justify-self: center;
+  }
+
+  #resume section[id] {
+    background-color: #093a47;
+    align-self: center;
+    border-radius: 20px;
+}
+
+  div#about_content #about_me div#about_profile_picture img{
+    background-color: #3fa1bb;
+    border-radius: 42%;
+}
+
+  #skills div.grid [id^="ce"] {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    color:#fafafa;
+  }
+
+  #skills div.grid [id^="ce"] {
+    padding: 10px;
+    background-color: #093a47;
+    border-radius: 20px;
+}
+
+#goals li {
+  background-color: #093a47;
+  border-radius: 20px;
+  padding: 10px;
+  list-style: none;
+}
+}

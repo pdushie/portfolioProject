@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+    Author: Philip Dushie
+    Project: e Portfolio
+    Date: October 10, 2024
+    Component: projects.html page
+    -->
+    <meta charset="UTF-8">
+    <meta name="description" content="Philip Dushie's portfolio site">
+    <meta name="keywords"
+        content="Portfolio, Full Stack, Developer, Application, Web design, Philip, Dushie, Network Engineer, Networking, Networks, DevOps, Administrator, Support, End User, Desktop Support">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philip Dushie Portfolio | Projects</title>
+    <link href="reset.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/1.0.2/css/bulma.css"
+        integrity="sha512-hLLNN0vjl0jx+7whWX13jNmgFCE4qRM7llh6eu+NTD9gaIZHqXgQLiojT9d1NNLqzj2WUWTFnHVZ3NgZIO6/Eg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="layout.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b7235ceaac.js" crossorigin="anonymous"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+    <header>
+        <div id="header_image">
+            <img src="portfolio_header_image.png" alt="header image">
+        </div>
+    </header>
+    <div id="main_navbar">
+        <nav>
+            <a id="navicon" href="#"><img src="menu_burger_icon.webp" alt="menu icon"></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_me.html">About Me</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="myresume.html">My Resume</a></li>
+                <li><a href="goals.html">Goals</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="projects_content">
+        <section id="acme_projects">
+            <div id="acme_text_content">
+                <h1><em>Responsive Website Design for Acme Adventure Travel</em></h1>
+                <p>Designed and built a responsive and mobile friendly website for Acme Adventure Travel. Design was
+                    done
+                    purely with HTML and CSS from the scratch</p>
+            </div>
+            <div id="acme_image_content">
+                <a href="http://acmetravel.great-site.net" target="new"><img src="acme_travel-website.PNG"
+                        alt="Acme travel website"></a>
+            </div>
+        </section>
+        <section id="battleship_project">
+            <div id="battleship_text_content">
+                <h1><em>Console-based Battleship Game</em></h1>
+                <p>Implemented a color-rich version of the famous battleship game using node JS and the chalk library
+                </p>
+            </div>
+            <div id="battleship_image">
+                <a href="https://github.com/pdushie/battleship_javascript_game" target="new"><img
+                        src="battle_ship_game.PNG" alt="Battle ship game image"></a>
+            </div>
+        </section>
+        <section id="air_quality_project">
+            <div id="air_quality-text">
+                <h1><em>Air Quality Index Prediction App</em></h1>
+                <p>Air Quality Index (AQI) is a measure of the level of pollution in the air. It is an important measure
+                    since it provides information on the quality of air we breath in and its impact on our health. The
+                    AQI
+                    predictor app uses Decision Tree Regression a machine learning approach to predict the AQI given the
+                    mean concentration of Nitrogen dioxide (NO2), Sulphur dioxide (SO2), Ozone (O3), and Carbon mono
+                    oxide
+                    (CO). The AQI predictor was trained on the United States air pollution dataset from the year 2000 to
+                    2016.</p>
+            </div>
+            <div id="air_quality_image">
+                <a href="https://aqi-l78k.onrender.com/" target="new"><img src="aqi-image.jpg"
+                        alt="air quality index image"></a>
+            </div>
+        </section>
+        <section id="llm_project">
+            <div id="llm_project_text">
+                <h1><em>Large Language Model(LLM) Optimization</em></h1>
+                <p>Optimized the Llama-2-7B LLM using Retrieval-Augmented Generation (RAG). The LLM was optimized to
+                    offer
+                    technical advice in the areas of job search, interview skills, and career progression </p>
+            </div>
+            <div id="llm_image">
+                <a href="https://colab.research.google.com/github/pdushie/chainlit_llm_chatbot/blob/main/ChainLit_llama2_Chatbot.ipynb"
+                    target="new"><img src="llama2_image.jpg" alt="LLAMA 2 Image"></a>
+            </div>
+        </section>
+        <section id="handwritten_project">
+            <div id="handwritten_project_text">
+                <h1><em>Handwritten Digit Recognition App</em></h1>
+                <p>An app that uses Convolution Neural Networks (CNN) to recognize handwritten digits. This app was
+                    trained
+                    on the MNIST dataset which contains 60,000 28 x 28 pixels square images of handwritten digits. The
+                    user
+                    interface of this project is built using Streamlit.</p>
+            </div>
+            <div id="handwritten_project_image">
+                <a href="https://mtdebut-digit-app-app-qpj0lx.streamlit.app/" target="new"><img
+                        src="Sample-handwritten-digits.png" alt="hand written digits image"></a>
+            </div>
+        </section>
+        <section id="calculator_project">
+            <div id="calculator_project_text">
+                <h1><em>Simple Calculator</em></h1>
+                <p>This was one of my earliest project. It is a basic arithmetic calculator built with only HTML,
+                    CSS,
+                    and
+                    JavaScript.</p>
+            </div>
+            <div id="calculator_project_image">
+                <a href="https://pdushie.github.io/calculator/" target="new"><img src="calculator-image.jpg"
+                        alt="simple calculator image"></a>
+            </div>
+            <div id="more_projects"><a href="https://github.com/pdushie" class="button" target="new">View More
+                    Projects</a></div>
+        </section>
+    </div>
+    <script src="main.js"></script>
+    <footer>
+        <div>Philip Dushie &copy; 2024. All rights reserved.</div>
+        <div><a href="https://github.com/pdushie" target="new"><i class="fa-brands fa-github"></i></a></div>
+        <div><a href="https://www.linkedin.com/in/pdushie" target="new"><i class="fa-brands fa-linkedin"></i></a></div>
+    </footer>
+</body>
+</html>

@@ -26,7 +26,7 @@ This portfolio serves as a space to demonstrate my journey in front-end developm
 
 ## Features
 
-- **About Me**: I am Philip Dushie, a network engineer currently transitioning to a more full stack application development role.
+- **About Me**: A brief introduction to who I am, my skills, and goals.
 - **Projects**: A showcase of my projects, with descriptions and links to live demos.
 - **Skills**: A section dedicated to tools and technologies I’m proficient in.
 - **Contact**: Links to my social profiles and ways to connect.

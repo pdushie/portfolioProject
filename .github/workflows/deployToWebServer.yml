@@ -12,7 +12,7 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
         server-dir: ./htdocs/
-        dangerous-clean-slate: true
+        dangerous-clean-slate: false
         server: ftpupload.net
         username: if0_37560593
         password: K6zqg2IN5U

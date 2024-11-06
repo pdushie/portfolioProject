@@ -24,3 +24,10 @@ document.body.addEventListener('click', function(event) {
         menu.style.display = 'none';
     }
 });
+
+// Dynamically generate Year in the footer copyright section
+let dateHolder = document.querySelector('#fullYear');
+dateHolder.textContent = getDate().getFullYear();
+function getDate(){
+    return new Date();
+}

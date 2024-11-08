@@ -130,6 +130,28 @@ html {
   height: auto;
   border-radius: 5px;
 }
+  #deckOfCards_project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+  #deckOfCards_text_content {
+  flex: 1;
+}
+
+#deckOfCards_image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 5px;
+}
 #acme_image_content img {
   width: 100%;
   max-width: 500px;

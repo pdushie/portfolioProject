@@ -341,6 +341,13 @@ Style for Desktop and Tablets (Screen Size: 481px and above)
     width: 90%;
     margin: auto;
   }
+  #deckOfCards_project  {
+    background-color: #093a47;
+    color: #faf9f6;
+    padding: 30px;
+    width: 90%;
+    margin: auto;
+  }
   #air_quality_project  {
     background-color: #093a47;
     color: #faf9f6;

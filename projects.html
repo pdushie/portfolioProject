@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+        Author: Philip Dushie
+        Project: e Portfolio Revamped
+        Date: December 12, 2024
+        Component: about_me.html page
+        -->
+    <meta charset="UTF-8">
+    <meta name="description" content="Philip Dushie's portfolio site">
+    <meta name="keywords"
+        content="Portfolio, Full Stack, Developer, Application, Web design, Philip, Dushie, Network Engineer, Networking, Networks, DevOps, Administrator, Support, End User, Desktop Support">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philip Dushie Portfolio | Projects</title>
+    <link href="styles.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+    <script src="https://kit.fontawesome.com/b7235ceaac.js" crossorigin="anonymous"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="main.js" defer></script>
+</head>
+<header>
+    <div id="header_image">
+        <!-- <img src="../images/portfolio_header_image.png" alt="header image"> -->
+    </div>
+</header>
+<!--Navbar div-->
+<!-- Main navigation container -->
+<nav id="top"
+    class="relative flex w-full flex-nowrap items-center justify-between main_navbar py-2 text-neutral-500 shadow-dark-mild hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-700 lg:flex-wrap lg:justify-start lg:py-4">
+    <div class="flex w-full flex-wrap items-center justify-between px-3">
+        <div class="ms-2">
+            <a class="text-xl text-slate-100 dark:text-white uppercase" href="#">My Portfolio</a>
+        </div>
+        <!--Burger icon for mobile view -->
+        <button
+            class="block border-0 bg-transparent px-2 text-slate-100 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
+            type="button">
+            <!-- Burger icon -->
+            <span class="[&>svg]:w-7 [&>svg]:stroke-black/50 dark:[&>svg]:stroke-neutral-200">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" id="burger">
+                    <path fill-rule="evenodd"
+                        d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+                        clip-rule="evenodd" />
+                </svg>
+            </span>
+        </button>
+
+        <!-- Collapsible navbar container -->
+        <div class="!visible mt-2 hidden flex-grow basis-[100%] items-center lg:mt-0 lg:!flex lg:basis-auto" id="menu">
+            <!-- Left links -->
+            <div class="list-style-none me-auto flex flex-col ps-0 lg:mt-1 lg:flex-row">
+                <!-- Home link -->
+                <div class="my-4 ps-2 lg:my-0 lg:pe-1 lg:ps-2">
+                    <a class="text-slate-100 dark:text-white lg:px-2" aria-current="page" href="index.html">Home</a>
+                </div>
+                <!-- About Me link -->
+                <div class="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0">
+                    <a class="p-0 text-slate-100 transition duration-200 navbar_a_style lg:px-4"
+                        href="about_me.html">About Me</a>
+                </div>
+                <!-- Skills link -->
+                <div class="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0">
+                    <a class="p-0 text-slate-100 transition duration-200 navbar_a_style lg:px-4"
+                        href="skills.html">Skills</a>
+                </div>
+                <!-- Projects link -->
+                <div class="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0">
+                    <a class="p-0 text-slate-100 transition duration-200 navbar_a_style lg:px-4"
+                        href="projects.html">Projects</a>
+                </div>
+                <!-- My Resume link -->
+                <div class="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0">
+                    <a class="p-0 text-slate-100 transition duration-200 navbar_a_style lg:px-4" href="myresume.html">My
+                        Resume</a>
+                </div>
+                <!-- Goals link -->
+                <div class="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0">
+                    <a class="p-0 text-slate-100 transition duration-200 navbar_a_style lg:px-4"
+                        href="goals.html">Goals</a>
+                </div>
+                <!-- Contact Me link -->
+                <div class="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0">
+                    <a class="p-0 text-slate-100 transition duration-200 navbar_a_style lg:px-4"
+                        href="contact.html">Contact Me</a>
+                </div>
+
+            </div>
+            <!-- Left links -->
+        </div>
+        <!-- Collapsible wrapper -->
+    </div>
+</nav>
+
+<body class="background">
+    </div>
+    <div class="main_content_mobile lg:main_content_desktop align-middle">
+        <main>
+            <div id="projects_content">
+                <h1 class="h1_intro">My Projects.</h1>
+                <div class="swiper">
+                    <div class="slider-wrapper hidden md:block">
+                        <div class="swiper-wrapper">
+                            <!-- Slides Here -->
+                            <div class="swiper-slide">
+                                <div class="llm_project hover:shadow-lg transition duration-200 w-[70%]">
+                                    <div class="casing p-10 bg-[#093a47] text-slate-50 rounded-lg">
+                                        <a href="https://colab.research.google.com/github/pdushie/chainlit_llm_chatbot/blob/main/ChainLit_llama2_Chatbot.ipynb"
+                                            target="new"><img src="./images/llama2_image.jpg" alt="llm image"
+                                                class="w-full"></a>
+                                        <div class="container">
+                                            <h4 id="llm-title" class="font-semibold text-left">LLM Training Project</h4>
+                                            <p id="llm_description" class="hidden">Optimized the Llama-2-7B LLM using
+                                                Retrieval-Augmented
+                                                Generation (RAG). The LLM was optimized to offer technical advice in the
+                                                areas
+                                                of job
+                                                search, interview skills, and career progression</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="creatives_project hover:shadow-lg transition duration-200 w-[70%]">
+                                    <div class="casing p-10 bg-[#093a47] text-slate-50 rounded-lg">
+                                        <a href="https://pdushie.github.io/acmecreatives/" target="new"><img
+                                                src="./images/acme_creatives.png" alt="acme creatives image"
+                                                class="w-full"></a>
+                                        <div class="container">
+                                            <h4 id="creatives-title" class="font-semibold text-left">Web Design for ACME
+                                                Creatives</h4>
+                                            <p id="creatives_description" class="hidden">Designed and build an
+                                                interactive
+                                                single page
+                                                website for
+                                                ACME Creatives using HTML, Tailwind CSS and JavaScript</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="puzzle_project hover:shadow-lg transition duration-200 w-[70%]">
+                                    <div class="casing p-10 bg-[#093a47] text-slate-50 rounded-lg">
+                                        <a href="https://pdushie.github.io/3inRowPuzzle/" target="new"><img
+                                                src="./images/3inrowpuzzle.png" alt="3 in a row puzzle image"
+                                                class="w-full"></a>
+                                        <div class="container">
+                                            <h4 id="puzzle-title" class="font-semibold text-left">3-In-A-Row Game
+                                            </h4>
+                                            <p id="puzzle_description" class="hidden">Designed and built an
+                                                interactive 3-in-a-row game using html, JavaScript and CSS. This app
+                                                utilizes asynchronous functions to fetch puzzle data from an API</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="deck_project hover:shadow-lg transition duration-200 w-[70%]">
+                                    <div class="casing p-10 bg-[#093a47] text-slate-50 rounded-lg">
+                                        <a href="https://pdushie.github.io/deckofcards/" target="new"><img
+                                                src="./images/deck_of_card.png" alt="deck of cards image"
+                                                class="w-full"></a>
+                                        <div class="container">
+                                            <h4 id="deck_title" class="font-semibold text-left">Deck of Cards Viewer App
+                                            </h4>
+                                            <p id="deck_description" class="hidden">Implemented a deck of card viewer to
+                                                practice
+                                                interacting
+                                                with 3rd party APIs using JavaScript asynchronous functions.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="bus_project hover:shadow-lg transition duration-200 w-[70%]">
+                                    <div class="casing p-10 bg-[#093a47] text-slate-50 rounded-lg">
+                                        <a href="https://pdushie.github.io/bustracker/" target="new"><img
+                                                src="./images/bus_tracker.png" alt="bus tracker image"
+                                                class="w-full"></a>
+                                        <div class="container">
+                                            <h4 id="bus_title" class="font-semibold text-left">HRM Bus Tracker App</h4>
+                                            <p id="bus_description" class="hidden">Built an app to track Metro Transit
+                                                buses
+                                                in
+                                                Halifax,
+                                                Nova Scotia. App was built with Javascript, html, and Leaflet Maps.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="chinookmusic_project hover:shadow-lg transition duration-200 w-[70%]">
+                                    <div class="casing p-10 bg-[#093a47] text-slate-50 rounded-lg">
+                                        <a href="https://mychinookapp-1.onrender.com/" target="new"><img
+                                                src="./images/chinookmusic.png" alt="chinook music image"
+                                                class="w-full"></a>
+                                        <div class="container">
+                                            <h4 id="chinookmusic_title" class="font-semibold text-left">Chinook Music
+                                                App
+                                            </h4>
+                                            <p id="chinookmusic_description" class="hidden">Built and configured the
+                                                backend
+                                                (Endpoints
+                                                and
+                                                database)
+                                                for the Chinook Music App. The backend was built using Express JS.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="acmetravel_project hover:shadow-lg transition duration-200 w-[70%]">
+                                    <div class="casing p-10 bg-[#093a47] text-slate-50 rounded-lg">
+                                        <a href="http://acmetravel.great-site.net" target="new"><img
+                                                src="./images/acme_travel-website.PNG" alt="Acme Travel image"
+                                                class="w-full"></a>
+                                        <div class="container">
+                                            <h4 id="acmetravel_title" class="font-semibold text-left">Website Design for
+                                                Acme Travel
+                                            </h4>
+                                            <p id="acmetravel_description" class="hidden">Designed and built a
+                                                responsive
+                                                and mobile friendly website for Acme Adventure Travel. Design was
+                                                done
+                                                purely with HTML and CSS from the scratch</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="battleship_project hover:shadow-lg transition duration-200 w-[70%]">
+                                    <div class="casing p-10 bg-[#093a47] text-slate-50 rounded-lg">
+                                        <a href="https://github.com/pdushie/battleship_javascript_game"
+                                            target="new"><img src="./images/battle_ship_game.PNG" alt="battleship image"
+                                                class="w-full"></a>
+                                        <div class="container">
+                                            <h4 id="battleship_title" class="font-semibold text-left">Console-based
+                                                Battleship Game
+                                            </h4>
+                                            <p id="battleship_description" class="hidden">Implemented a color-rich
+                                                version
+                                                of the famous battleship game using node JS and the chalk
+                                                library.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="recognition_project hover:shadow-lg transition duration-200 w-[70%]">
+                                    <div class="casing p-10 bg-[#093a47] text-slate-50 rounded-lg">
+                                        <a href="https://mtdebut-digit-app-app-qpj0lx.streamlit.app" target="new"><img
+                                                src="./images/Sample-handwritten-digits.png"
+                                                alt="handwritten digits image" class="w-full"></a>
+                                        <div class="container">
+                                            <h4 id="recognition_title" class="font-semibold text-left text-clip">
+                                                Handwritten Recognition App
+                                            </h4>
+                                            <p id="recognition_description" class="hidden">Built an app that uses
+                                                Convolution Neural Networks (CNN) to recognize handwritten digits. This
+                                                app was
+                                                trained
+                                                on the MNIST dataset which contains 60,000 28 x 28 pixels square images
+                                                of handwritten digits.
+                                                The backend is built using python and the
+                                                user
+                                                interface of this project is built using Streamlit.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="calculator_project hover:shadow-lg transition duration-200 w-[70%]">
+                                    <div class="casing p-10 bg-[#093a47] text-slate-50 rounded-lg">
+                                        <a href="https://pdushie.github.io/calculator/" target="new"><img
+                                                src="./images/calculator-image.jpg" alt="calculator image"
+                                                class="w-full"></a>
+                                        <div class="container">
+                                            <h4 id="calculator_title" class="font-semibold text-left">Simple Calculator
+                                            </h4>
+                                            <p id="calculator_description" class="hidden">This was my first attempt at
+                                                building an app. It is a basic arithmetic calculator built with only
+                                                HTML,
+                                                CSS,
+                                                and
+                                                JavaScript.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="airquality_project hover:shadow-lg transition duration-200 w-[70%]">
+                                    <div class="casing p-10 bg-[#093a47] text-slate-50 rounded-lg">
+                                        <a href="https://aqi-l78k.onrender.com/" target="new"><img
+                                                src="./images/aqi-image.jpg" alt="aqi image" class="w-full"></a>
+                                        <div class="container">
+                                            <h4 id="airquality_title" class="font-semibold text-left">Air Quality Index
+                                                Prediction App
+                                            </h4>
+                                            <p id="airquality_description" class="hidden">Air Quality Index (AQI) is a
+                                                measure of the level of pollution in the air. It is an important
+                                                measure
+                                                since it provides information on the quality of air we breath in and its
+                                                impact on our health.
+                                                The
+                                                AQI
+                                                predictor app uses Decision Tree Regression a machine learning approach
+                                                to predict the AQI given
+                                                the
+                                                mean concentration of Nitrogen dioxide (NO2), Sulphur dioxide (SO2),
+                                                Ozone (O3), and Carbon mono
+                                                oxide
+                                                (CO). The AQI predictor was trained on the United States air pollution
+                                                dataset from the year
+                                                2000 to
+                                                2016.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-slide-button swiper-button-prev"></div>
+                        <div class="swiper-slide-button swiper-button-next"></div>
+                    </div>
+                </div>
+
+                <div class="mobile flex flex-col md:hidden">
+                    <div class="llm_project hover:shadow-lg transition duration-200 w-full">
+                        <div class="casing p-10 bg-[#093a47] text-slate-50 rounded-lg">
+                            <a href="https://colab.research.google.com/github/pdushie/chainlit_llm_chatbot/blob/main/ChainLit_llama2_Chatbot.ipynb"
+                                target="new"><img src="./images/llama2_image.jpg" alt="llm image" class="w-full"></a>
+                            <div class="container">
+                                <h4 id="llm-title" class="font-semibold text-left">LLM Training Project</h4>
+                                <p id="llm_description" class="hidden">Optimized the Llama-2-7B LLM using
+                                    Retrieval-Augmented
+                                    Generation (RAG). The LLM was optimized to offer technical advice in the
+                                    areas
+                                    of job
+                                    search, interview skills, and career progression</p>
+                            </div>
+                        </div>
+                        <div class="creatives_project hover:shadow-lg transition duration-200 w-full">
+                            <div class="casing p-10 bg-[#093a47] text-slate-50 rounded-lg">
+                                <a href="https://pdushie.github.io/acmecreatives/" target="new"><img
+                                        src="./images/acme_creatives.png" alt="acme creatives image" class="w-full"></a>
+                                <div class="container">
+                                    <h4 id="creatives-title" class="font-semibold text-left">Web Design for ACME
+                                        Creatives</h4>
+                                    <p id="creatives_description" class="hidden">Designed and build an
+                                        interactive
+                                        single page
+                                        website for
+                                        ACME Creatives using HTML, Tailwind CSS and JavaScript</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="puzzle_project hover:shadow-lg transition duration-200 w-full">
+                            <div class="casing p-10 bg-[#093a47] text-slate-50 rounded-lg">
+                                <a href="https://pdushie.github.io/3inRowPuzzle/" target="new"><img
+                                        src="./images/3inrowpuzzle.png" alt="3 in a row puzzle image"
+                                        class="w-full"></a>
+                                <div class="container">
+                                    <h4 id="puzzle-title" class="font-semibold text-left">3-In-A-Row Game
+                                    </h4>
+                                    <p id="puzzle_description" class="hidden">Designed and built an
+                                        interactive 3-in-a-row game using html, JavaScript and CSS. This app
+                                        utilizes asynchronous functions to fetch puzzle data from an API</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="deck_project hover:shadow-lg transition duration-200 w-full">
+                            <div class="casing p-10 bg-[#093a47] text-slate-50 rounded-lg">
+                                <a href="https://pdushie.github.io/deckofcards/" target="new"><img
+                                        src="./images/deck_of_card.png" alt="deck of cards image" class="w-full"></a>
+                                <div class="container">
+                                    <h4 id="deck_title" class="font-semibold text-left">Deck of Cards Viewer App
+                                    </h4>
+                                    <p id="deck_description" class="hidden">Implemented a deck of card viewer to
+                                        practice
+                                        interacting
+                                        with 3rd party APIs using JavaScript asynchronous functions.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bus_project hover:shadow-lg transition duration-200 w-full">
+                            <div class="casing p-10 bg-[#093a47] text-slate-50 rounded-lg">
+                                <a href="https://pdushie.github.io/bustracker/" target="new"><img
+                                        src="./images/bus_tracker.png" alt="bus tracker image" class="w-full"></a>
+                                <div class="container">
+                                    <h4 id="bus_title" class="font-semibold text-left">HRM Bus Tracker App</h4>
+                                    <p id="bus_description" class="hidden">Built an app to track Metro Transit
+                                        buses
+                                        in
+                                        Halifax,
+                                        Nova Scotia. App was built with Javascript, html, and Leaflet Maps.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chinookmusic_project hover:shadow-lg transition duration-200 w-full">
+                            <div class="casing p-10 bg-[#093a47] text-slate-50 rounded-lg">
+                                <a href="https://mychinookapp-1.onrender.com/" target="new"><img
+                                        src="./images/chinookmusic.png" alt="chinook music image" class="w-full"></a>
+                                <div class="container">
+                                    <h4 id="chinookmusic_title" class="font-semibold text-left">Chinook Music App
+                                    </h4>
+                                    <p id="chinookmusic_description" class="hidden">Built and configured the backend
+                                        (Endpoints
+                                        and
+                                        database)
+                                        for the Chinook Music App. The backend was built using Express JS.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="acmetravel_project hover:shadow-lg transition duration-200 w-full">
+                            <div class="casing p-10 bg-[#093a47] text-slate-50 rounded-lg">
+                                <a href="http://acmetravel.great-site.net" target="new"><img
+                                        src="./images/acme_travel-website.PNG" alt="Acme Travel image"
+                                        class="w-full"></a>
+                                <div class="container">
+                                    <h4 id="acmetravel_title" class="font-semibold text-left">Website Design for
+                                        Acme Travel
+                                    </h4>
+                                    <p id="acmetravel_description" class="hidden">Designed and built a
+                                        responsive
+                                        and mobile friendly website for Acme Adventure Travel. Design was
+                                        done
+                                        purely with HTML and CSS from the scratch</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="battleship_project hover:shadow-lg transition duration-200 w-full">
+                            <div class="casing p-10 bg-[#093a47] text-slate-50 rounded-lg">
+                                <a href="https://github.com/pdushie/battleship_javascript_game" target="new"><img
+                                        src="./images/battle_ship_game.PNG" alt="battleship image" class="w-full"></a>
+                                <div class="container">
+                                    <h4 id="battleship_title" class="font-semibold text-left">Console-based
+                                        Battleship Game
+                                    </h4>
+                                    <p id="battleship_description" class="hidden">Implemented a color-rich
+                                        version
+                                        of the famous battleship game using node JS and the chalk
+                                        library.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recognition_project hover:shadow-lg transition duration-200 w-full">
+                            <div class="casing p-10 bg-[#093a47] text-slate-50 rounded-lg">
+                                <a href="https://mtdebut-digit-app-app-qpj0lx.streamlit.app" target="new"><img
+                                        src="./images/Sample-handwritten-digits.png" alt="handwritten digits image"
+                                        class="w-full"></a>
+                                <div class="container">
+                                    <h4 id="recognition_title" class="font-semibold text-left text-clip">Handwritten
+                                        Recognition App
+                                    </h4>
+                                    <p id="recognition_description" class="hidden">Built an app that uses
+                                        Convolution Neural Networks (CNN) to recognize handwritten digits. This
+                                        app was
+                                        trained
+                                        on the MNIST dataset which contains 60,000 28 x 28 pixels square images
+                                        of handwritten digits.
+                                        The backend is built using python and the
+                                        user
+                                        interface of this project is built using Streamlit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="calculator_project hover:shadow-lg transition duration-200 w-full">
+                            <div class="casing p-10 bg-[#093a47] text-slate-50 rounded-lg">
+                                <a href="https://pdushie.github.io/calculator/" target="new"><img
+                                        src="./images/calculator-image.jpg" alt="calculator image" class="w-full"></a>
+                                <div class="container">
+                                    <h4 id="calculator_title" class="font-semibold text-left">Simple Calculator
+                                    </h4>
+                                    <p id="calculator_description" class="hidden">This was my first attempt at
+                                        building an app. It is a basic arithmetic calculator built with only
+                                        HTML,
+                                        CSS,
+                                        and
+                                        JavaScript.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="airquality_project hover:shadow-lg transition duration-200 w-full">
+                            <div class="casing p-10 bg-[#093a47] text-slate-50 rounded-lg">
+                                <a href="https://aqi-l78k.onrender.com/" target="new"><img src="./images/aqi-image.jpg"
+                                        alt="aqi image" class="w-full"></a>
+                                <div class="container">
+                                    <h4 id="airquality_title" class="font-semibold text-left">Air Quality Index
+                                        Prediction App
+                                    </h4>
+                                    <p id="airquality_description" class="hidden">Air Quality Index (AQI) is a
+                                        measure of the level of pollution in the air. It is an important
+                                        measure
+                                        since it provides information on the quality of air we breath in and its
+                                        impact on our health.
+                                        The
+                                        AQI
+                                        predictor app uses Decision Tree Regression a machine learning approach
+                                        to predict the AQI given
+                                        the
+                                        mean concentration of Nitrogen dioxide (NO2), Sulphur dioxide (SO2),
+                                        Ozone (O3), and Carbon mono
+                                        oxide
+                                        (CO). The AQI predictor was trained on the United States air pollution
+                                        dataset from the year
+                                        2000 to
+                                        2016.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script type="module" src="swiper.js"></script>
+    </div>
+
+    <footer class="footer-style">
+        <div>Philip Dushie &copy; <span id="footerYear"></span>. All rights reserved.</div>
+        <div class="ml-2"><a href="https://github.com/pdushie" target="new"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <div class="ml-2"><a href="https://www.linkedin.com/in/pdushie" target="new"><i
+                    class="fa-brands fa-linkedin"></i></a></div>
+    </footer>
+</body>
+
+</html>

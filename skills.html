@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+        Author: Philip Dushie
+        Project: e Portfolio Revamped
+        Date: December 12, 2024
+        Component: about_me.html page
+        -->
+    <meta charset="UTF-8">
+    <meta name="description" content="Philip Dushie's portfolio site">
+    <meta name="keywords"
+        content="Portfolio, Full Stack, Developer, Application, Web design, Philip, Dushie, Network Engineer, Networking, Networks, DevOps, Administrator, Support, End User, Desktop Support">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philip Dushie Portfolio | Skills</title>
+    <link href="styles.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+    <script src="https://kit.fontawesome.com/b7235ceaac.js" crossorigin="anonymous"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <script src="main.js" defer></script>
+</head>
+
+<body class="background">
+    <section>
+        <header>
+            <!--Insert header banner image here-->
+            <div id="header_image">
+                <!-- <img src="../images/portfolio_header_image.png" alt="header image"> -->
+            </div>
+        </header>
+        <!--Navbar div-->
+        <!-- Main navigation container -->
+        <nav id="top"
+            class="relative flex w-full flex-nowrap items-center justify-between main_navbar py-2 text-neutral-500 shadow-dark-mild hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-700 lg:flex-wrap lg:justify-start lg:py-4">
+            <div class="flex w-full flex-wrap items-center justify-between px-3">
+                <div class="ms-2">
+                    <a class="text-xl text-slate-100 dark:text-white uppercase" href="#">My Portfolio</a>
+                </div>
+                <!--Burger icon for mobile view -->
+                <button
+                    class="block border-0 bg-transparent px-2 text-slate-100 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
+                    type="button">
+                    <!-- Burger icon -->
+                    <span class="[&>svg]:w-7 [&>svg]:stroke-black/50 dark:[&>svg]:stroke-neutral-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" id="burger">
+                            <path fill-rule="evenodd"
+                                d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </span>
+                </button>
+
+                <!-- Collapsible navbar container -->
+                <div class="!visible mt-2 hidden flex-grow basis-[100%] items-center lg:mt-0 lg:!flex lg:basis-auto"
+                    id="menu">
+                    <!-- Left links -->
+                    <div class="list-style-none me-auto flex flex-col ps-0 lg:mt-1 lg:flex-row">
+                        <!-- Home link -->
+                        <div class="my-4 ps-2 lg:my-0 lg:pe-1 lg:ps-2">
+                            <a class="text-slate-100 dark:text-white lg:px-2" aria-current="page"
+                                href="index.html">Home</a>
+                        </div>
+                        <!-- About Me link -->
+                        <div class="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0">
+                            <a class="p-0 text-slate-100 transition duration-200 navbar_a_style lg:px-4"
+                                href="about_me.html">About Me</a>
+                        </div>
+                        <!-- Skills link -->
+                        <div class="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0">
+                            <a class="p-0 text-slate-100 transition duration-200 navbar_a_style lg:px-4"
+                                href="skills.html">Skills</a>
+                        </div>
+                        <!-- Projects link -->
+                        <div class="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0">
+                            <a class="p-0 text-slate-100 transition duration-200 navbar_a_style lg:px-4"
+                                href="projects.html">Projects</a>
+                        </div>
+                        <!-- My Resume link -->
+                        <div class="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0">
+                            <a class="p-0 text-slate-100 transition duration-200 navbar_a_style lg:px-4"
+                                href="myresume.html">My Resume</a>
+                        </div>
+                        <!-- Goals link -->
+                        <div class="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0">
+                            <a class="p-0 text-slate-100 transition duration-200 navbar_a_style lg:px-4"
+                                href="goals.html">Goals</a>
+                        </div>
+                        <!-- Contact Me link -->
+                        <div class="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0">
+                            <a class="p-0 text-slate-100 transition duration-200 navbar_a_style lg:px-4"
+                                href="contact.html">Contact Me</a>
+                        </div>
+
+                    </div>
+                    <!-- Left links -->
+                </div>
+                <!-- Collapsible wrapper -->
+            </div>
+        </nav>
+        </div>
+        <div id="skills" class="main_content_mobile lg:main_content_desktop">
+            <h1 class="h1_intro">My Skills.</h1>
+            <div class="align-middle leading-relaxed">
+                <p>With over 7 years of experience in computer networking, I have developed a strong foundation in
+                    managing
+                    IT infrastructure and solving complex technical challenges. Last year, I completed a program in
+                    artificial intelligence (AI), further expanding my skill set in advanced technologies.</p>
+                <p>Currently, I am pursuing Full Stack Application Development at Nova Scotia Community College (NSCC),
+                    blending my expertise in networking and AI with my passion for creating dynamic web applications.
+                </p>
+                <p>My skills are listed below:</p>
+            </div>
+            <div class="skills-area grid grid-cols-1 row-start-1 lg:grid lg:grid-cols-2 border rounded-lg mt-10">
+                <div class="left lg:col-start-1">
+                    <div class="skill">
+                        <div class="skill-title">HTML5</div>
+                        <div class="skill-bar"></div>
+                        <div class="html5 skill-fill">
+                            <span class="skill-percent">80%</span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-title">CSS3</div>
+                        <div class="skill-bar"></div>
+                        <div class="css3 skill-fill">
+                            <span class="skill-percent">70%</span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-title">JavaScript</div>
+                        <div class="skill-bar"></div>
+                        <div class="js skill-fill">
+                            <span class="skill-percent">75%</span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-title">Node JS</div>
+                        <div class="skill-bar"></div>
+                        <div class="node skill-fill">
+                            <span class="skill-percent">75%</span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-title">Express JS</div>
+                        <div class="skill-bar"></div>
+                        <div class="express skill-fill">
+                            <span class="skill-percent">80%</span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-title">J Query</div>
+                        <div class="skill-bar"></div>
+                        <div class="jquery skill-fill">
+                            <span class="skill-percent">60%</span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-title">Vue</div>
+                        <div class="skill-bar"></div>
+                        <div class="vue skill-fill">
+                            <span class="skill-percent">40%</span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-title">Git</div>
+                        <div class="skill-bar"></div>
+                        <div class="git skill-fill">
+                            <span class="skill-percent">75%</span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-title">MSSQL</div>
+                        <div class="skill-bar"></div>
+                        <div class="mssql skill-fill">
+                            <span class="skill-percent">60%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="right lg:col-start-2">
+                    <div class="skill">
+                        <div class="skill-title">Python</div>
+                        <div class="skill-bar"></div>
+                        <div class="python skill-fill">
+                            <span class="skill-percent">65%</span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-title">Matplotlib</div>
+                        <div class="skill-bar"></div>
+                        <div class="matplotlib skill-fill">
+                            <span class="skill-percent">70%</span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-title">Machine Learning</div>
+                        <div class="skill-bar"></div>
+                        <div class="machine-learning skill-fill">
+                            <span class="skill-percent">60%</span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-title">Desktop Support</div>
+                        <div class="skill-bar"></div>
+                        <div class="desktop-support skill-fill">
+                            <span class="skill-percent">95%</span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-title">Docker</div>
+                        <div class="skill-bar"></div>
+                        <div class="docker skill-fill">
+                            <span class="skill-percent">60%</span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-title">Virtualization</div>
+                        <div class="skill-bar"></div>
+                        <div class="virtualization skill-fill">
+                            <span class="skill-percent">70%</span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-title">Computer Networking</div>
+                        <div class="skill-bar"></div>
+                        <div class="computer-networking skill-fill">
+                            <span class="skill-percent">80%</span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-title">Cyber Security</div>
+                        <div class="skill-bar"></div>
+                        <div class="cyber-security skill-fill">
+                            <span class="skill-percent">70%</span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-title">Bash Scripting</div>
+                        <div class="skill-bar"></div>
+                        <div class="bash-scripting skill-fill">
+                            <span class="skill-percent">70%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer-style">
+        <div>Philip Dushie &copy; <span id="footerYear"></span>. All rights reserved.</div>
+        <div class="ml-2"><a href="https://github.com/pdushie" target="new"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <div class="ml-2"><a href="https://www.linkedin.com/in/pdushie" target="new"><i
+                    class="fa-brands fa-linkedin"></i></a></div>
+    </footer>
+</body>
+
+</html>

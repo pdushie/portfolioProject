@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--
+        Author: Philip Dushie
+        Project: e Portfolio Revamped
+        Date: December 12, 2024
+        Component: about_me.html page
+        -->
+        <meta charset="UTF-8">
+        <meta name="description" content="Philip Dushie's portfolio site">
+        <meta name="keywords"
+            content="Portfolio, Full Stack, Developer, Application, Web design, Philip, Dushie, Network Engineer, Networking, Networks, DevOps, Administrator, Support, End User, Desktop Support">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Philip Dushie Portfolio | Goals</title>
+        <link href="styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <script src="https://kit.fontawesome.com/b7235ceaac.js" crossorigin="anonymous"></script>
+        <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+        <link rel="manifest" href="site.webmanifest">
+        <script src="main.js" defer></script>
+    </head>
+<body class="background">
+    <header>
+        <!-- <div id="header_image">
+            <img src="../images/portfolio_header_image.png" alt="header image">
+        </div> -->
+    </header>
+    <!--Navbar div-->
+        <!-- Main navigation container -->
+        <nav id="top"
+          class="relative flex w-full flex-nowrap items-center justify-between main_navbar py-2 text-neutral-500 shadow-dark-mild hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-700 lg:flex-wrap lg:justify-start lg:py-4">
+          <div class="flex w-full flex-wrap items-center justify-between px-3">
+            <div class="ms-2">
+              <a class="text-xl text-slate-100 dark:text-white uppercase" href="#">My Portfolio</a>
+            </div>
+            <!--Burger icon for mobile view -->
+            <button
+              class="block border-0 bg-transparent px-2 text-slate-100 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
+              type="button">
+              <!-- Burger icon -->
+              <span class="[&>svg]:w-7 [&>svg]:stroke-black/50 dark:[&>svg]:stroke-neutral-200">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" id="burger">
+                  <path fill-rule="evenodd"
+                    d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+                    clip-rule="evenodd" />
+                </svg>
+              </span>
+            </button>
+    
+            <!-- Collapsible navbar container -->
+            <div class="!visible mt-2 hidden flex-grow basis-[100%] items-center lg:mt-0 lg:!flex lg:basis-auto" id="menu">
+              <!-- Left links -->
+              <div class="list-style-none me-auto flex flex-col ps-0 lg:mt-1 lg:flex-row">
+                <!-- Home link -->
+                <div class="my-4 ps-2 lg:my-0 lg:pe-1 lg:ps-2">
+                  <a class="text-slate-100 dark:text-white lg:px-2" aria-current="page" href="index.html">Home</a>
+                </div>
+                <!-- About Me link -->
+                <div class="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0">
+                  <a class="p-0 text-slate-100 transition duration-200 navbar_a_style lg:px-4"
+                    href="about_me.html">About Me</a>
+                </div>
+                <!-- Skills link -->
+                <div class="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0">
+                  <a class="p-0 text-slate-100 transition duration-200 navbar_a_style lg:px-4"
+                    href="skills.html">Skills</a>
+                </div>
+                <!-- Projects link -->
+                <div class="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0">
+                  <a class="p-0 text-slate-100 transition duration-200 navbar_a_style lg:px-4"
+                    href="projects.html">Projects</a>
+                </div>
+                <!-- My Resume link -->
+                <div class="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0">
+                  <a class="p-0 text-slate-100 transition duration-200 navbar_a_style lg:px-4"
+                    href="myresume.html">My Resume</a>
+                </div>
+                <!-- Goals link -->
+                <div class="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0">
+                  <a class="p-0 text-slate-100 transition duration-200 navbar_a_style lg:px-4"
+                    href="goals.html">Goals</a>
+                </div>
+                <!-- Contact Me link -->
+                <div class="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0">
+                  <a class="p-0 text-slate-100 transition duration-200 navbar_a_style lg:px-4"
+                    href="contact.html">Contact Me</a>
+                </div>
+    
+              </div>
+              <!-- Left links -->
+            </div>
+            <!-- Collapsible wrapper -->
+          </div>
+        </nav>
+      </div>
+    <div id="goals_content" class="main_content_mobile lg:main_content_desktop lg:max-w-[70%]">
+        <section id="goals"  class="flex flex-col items-center">
+            <div id="goals_text" class="flex flex-col items-center border rounded-lg p-5 mt-10 leading-relaxed">
+                <h1 class="h1_intro">My Goals.</h1>
+                <div id="goals_image" class="max-w-[500px] mb-10">
+                    <img src="./images/goals.jpg" alt="goals image" class="rounded-lg shadow-lg">
+                </div>
+                <ul>
+                    <li class="mb-2"><b>Advance Full Stack Skills:</b> Deepen my expertise in full stack development by mastering
+                        advanced
+                        JavaScript frameworks (e.g., React, Vue.js) and backend technologies (e.g., Node.js, Express) to
+                        build
+                        more complex and dynamic web applications.</li>
+                    <li class="mb-2"><b>Expand AI and ML Knowledge:</b> Integrate AI/ML into my full stack projects, exploring how
+                        AI
+                        can enhance web applications, perhaps focusing on
+                        machine learning APIs or data-driven features.</li>
+                    <li class="mb-2"><b>Complete a Full Stack Capstone Project:</b> Build a full-stack application that showcases
+                        both
+                        my front-end
+                        and back-end skills and integrate features that highlight my network/systems background, such
+                        as real-time data or security layers.</li>
+                    <li class="mb-2"><b>Work-Life Balance:</b> Maintain a healthy balance between my growing career and family
+                        time,
+                        ensuring I
+                        set aside dedicated moments for my daughter and spouse, while also scheduling uninterrupted
+                        periods
+                        for focused coding sessions.</li>
+                    <li class="mb-2"><b>Networking and Collaboration:</b> Engage with communities or open-source projects in both
+                        the
+                        full stack and
+                        AI spaces to collaborate, learn, and stay up to date on the latest trends. This will help in my
+                        transition and career growth by connecting with like-minded professionals.</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <footer class="footer-style">
+        <div>Philip Dushie &copy; <span id="footerYear"></span>. All rights reserved.</div>
+        <div class="ml-2"><a href="https://github.com/pdushie" target="new"><i class="fa-brands fa-github"></i></a></div>
+        <div class="ml-2"><a href="https://www.linkedin.com/in/pdushie" target="new"><i class="fa-brands fa-linkedin"></i></a></div>
+    </footer>
+</body>
+</html>

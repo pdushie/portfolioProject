@@ -1,1 +1,1 @@
-javascript:alert()
+"javascript:alert()"

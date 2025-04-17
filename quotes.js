@@ -23,7 +23,8 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Call getResponse every 10 seconds
-  setInterval(() => {
-    getResponse();
-  }, 20000);
+  // Disable quotes display
+  // setInterval(() => {
+  //   getResponse();
+  // }, 20000);
 });

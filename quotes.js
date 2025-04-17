@@ -1,21 +1,3 @@
-// document.addEventListener('DOMContentLoaded', () => {
-//   // Talk to API to generate quotes
-//   let quoteHolder = document.querySelector('#quotes');
-//   //quoteHolder="";
-
-//   async function getResponse() {
-//     //const url = "https://api.adviceslip.com/advice";
-//     const url = "https://zenquotes.io/api/random/quotes";
-//     const response = await fetch(url, {mode: 'no-cors'});
-//     let result = await response.json();
-//     quoteHolder.textContent = (result);
-//   }
-
-//   setInterval(() => {
-//     getResponse();
-//   }, 10000);
-// });
-
 document.addEventListener('DOMContentLoaded', () => {
   // Select the element to display the quote
   let quoteHolder = document.querySelector('#quotes');
